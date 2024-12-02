@@ -2,6 +2,7 @@ import Navbar from "./Components/Navbar";
 import States from "./States/FBC/States";
 import NavbarCBC from "./Components/NavbarCBC";
 import Counter from "./States/FBC/Counter";
+import ChildA from "./Props/ChildA";
 const App = ()=>{
 return(
     <div>
@@ -10,6 +11,7 @@ return(
 <NavbarCBC/>
 <States/>
 <Counter/>
+<ChildA/>
     </div>
 );
 
