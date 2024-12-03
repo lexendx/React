@@ -9,7 +9,7 @@ return(
     <div>
 <h1>I am App Component</h1>
 {/*<Navbar/>
-<NavbarCBC/>
+<NavbarCBC/>  
 <States/>
 <Counter/>*/}
 <Parent/>
