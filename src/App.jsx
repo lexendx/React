@@ -7,6 +7,7 @@ import Counter from "./States/FBC/Counter";
 
 import Parent from "./Props/Parent";
 import PropsDrillingParent from "./PropsDrilling/PropsDrillingParent";
+import InlineCss from "./ReactCss/InlineCss";
 const App = ()=>{
 return(
     <div>
@@ -15,8 +16,9 @@ return(
 <NavbarCBC/>  
 <States/>
 <Counter/>*/}
-<Parent/>
-<PropsDrillingParent></PropsDrillingParent>
+{/* <Parent/>
+<PropsDrillingParent></PropsDrillingParent> */}
+<InlineCss></InlineCss>
     </div>
 );
 
