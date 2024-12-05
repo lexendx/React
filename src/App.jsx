@@ -8,6 +8,7 @@ import Footer from "./ReactCss/Footer";
 import Parent from "./Props/Parent";
 import PropsDrillingParent from "./PropsDrilling/PropsDrillingParent";
 import InlineCss from "./ReactCss/InlineCss";
+import Profile from "./Images/Profile";
 const App = ()=>{
 return(
     <div>
@@ -20,6 +21,7 @@ return(
 <PropsDrillingParent></PropsDrillingParent> */}
 <InlineCss></InlineCss>
 <Footer></Footer>
+<Profile></Profile>
     </div>
 );
 
