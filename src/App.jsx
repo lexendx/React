@@ -3,7 +3,7 @@ import States from "./States/FBC/States";
 import NavbarCBC from "./Components/NavbarCBC";
 import Counter from "./States/FBC/Counter";
 import Footer from "./ReactCss/Footer";
-
+import Navbar1 from "./Task/Navbar1"
 
 import Parent from "./Props/Parent";
 import PropsDrillingParent from "./PropsDrilling/PropsDrillingParent";
@@ -19,9 +19,10 @@ return(
 <Counter/>*/}
 {/* <Parent/>
 <PropsDrillingParent></PropsDrillingParent> */}
-<InlineCss></InlineCss>
+{/* <InlineCss></InlineCss>
 <Footer></Footer>
-<Profile></Profile>
+<Profile></Profile> */}
+<Navbar1></Navbar1>
     </div>
 );
 
