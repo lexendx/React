@@ -20,9 +20,10 @@ return(
 {/* <Parent/>
 <PropsDrillingParent></PropsDrillingParent> */}
 {/* <InlineCss></InlineCss>
-<Footer></Footer>
-<Profile></Profile> */}
+<Footer></Footer>*/}
 <Navbar1></Navbar1>
+{/* <Profile></Profile>  */}
+
     </div>
 );
 
