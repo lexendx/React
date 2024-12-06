@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: sans-serif;
     
-
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    
 
 
 }

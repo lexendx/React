@@ -12,7 +12,7 @@ import Profile from "./Images/Profile";
 const App = ()=>{
 return(
     <div>
-<h1>I am App Component</h1>
+<h1></h1>
 {/*<Navbar/>
 <NavbarCBC/>  
 <States/>
