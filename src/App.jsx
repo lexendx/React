@@ -10,6 +10,7 @@ import PropsDrillingParent from "./PropsDrilling/PropsDrillingParent";
 import InlineCss from "./ReactCss/InlineCss";
 import Profile from "./Images/Profile";
 import ControlledForms1 from "./Components/forms/ControlledForms1";
+import ControlledForms2 from "./Components/forms/ControlledForms2";
 const App = ()=>{
 return(
     <div>
@@ -24,7 +25,8 @@ return(
 <Footer></Footer>*/}
 {/* <Navbar1></Navbar1> */}
 {/* <Profile></Profile>  */}
-<ControlledForms1></ControlledForms1>
+{/* <ControlledForms1></ControlledForms1> */}
+<ControlledForms2/>
 
     </div>
 );

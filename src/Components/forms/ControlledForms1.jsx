@@ -19,7 +19,7 @@ const ControlledForms1 = () => {
 
   const forSubmit = (e) => {
     e.preventDefault();
-    console.log(username, useremail, userpassword);
+    console.log({username, useremail, userpassword});
     setUsername("");
  setUseremail("");
  setUserpassword(""); 
