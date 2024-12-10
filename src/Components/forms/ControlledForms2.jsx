@@ -19,7 +19,7 @@ const ControlledForms2 = () => {
   };
 
   return (
-    <div>
+    <div className="bg-orange-300">
       <h1>Controlled Forms Optimal Way</h1>
       <form onSubmit={formSubmit}>
         <label htmlFor="useremail">User Email:</label>

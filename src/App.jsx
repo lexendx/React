@@ -25,7 +25,7 @@ return(
 <Footer></Footer>*/}
 {/* <Navbar1></Navbar1> */}
 {/* <Profile></Profile>  */}
-{/* <ControlledForms1></ControlledForms1> */}
+{/* <ControlledForms1></ControlledForms1>  */}
 <ControlledForms2/>
 
     </div>
