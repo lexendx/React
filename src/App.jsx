@@ -11,6 +11,7 @@ import InlineCss from "./ReactCss/InlineCss";
 import Profile from "./Images/Profile";
 import ControlledForms1 from "./Components/forms/ControlledForms1";
 import ControlledForms2 from "./Components/forms/ControlledForms2";
+import TodoWrapper from "./TodoApp/TodoWrapper";
 const App = ()=>{
 return(
     <div>
@@ -26,8 +27,8 @@ return(
 {/* <Navbar1></Navbar1> */}
 {/* <Profile></Profile>  */}
 {/* <ControlledForms1></ControlledForms1>  */}
-<ControlledForms2/>
-
+{/* <ControlledForms2/> */}
+<TodoWrapper/>
     </div>
 );
 
