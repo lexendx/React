@@ -7,12 +7,10 @@ const TodoWrapper = () => {
   const [todos, setTodos] = useState([]);
   const [editId, setEditId] = useState(null);
 
-  // Handle input change
   const handleTodo = (e) => {
     setTodo(e.target.value);
   };
 
-  // Add or update todo
   const createOrUpdateTodo = (e) => {
     e.preventDefault();
     if (todo.trim() === "") {
@@ -21,14 +19,12 @@ const TodoWrapper = () => {
     }
 
     if (editId) {
-      // Update existing todo
       const updatedTodos = todos.map((t) =>
         t.id === editId ? { ...t, text: todo } : t
       );
       setTodos(updatedTodos);
       setEditId(null);
     } else {
-      // Add new todo
       const newTodo = {
         text: todo,
         id: Date.now(),
@@ -36,24 +32,23 @@ const TodoWrapper = () => {
       setTodos([...todos, newTodo]);
     }
 
-    setTodo(""); // Clear input field
+    setTodo("");
   };
 
-  // Edit a todo
   const handleEdit = (id) => {
     const todoToEdit = todos.find((t) => t.id === id);
     setTodo(todoToEdit.text);
     setEditId(id);
   };
 
-  // Delete a todo
   const handleDelete = (id) => {
     const filteredTodos = todos.filter((t) => t.id !== id);
     setTodos(filteredTodos);
   };
 
   return (
-    <div>
+    <div className="max-w-md mx-auto p-4 bg-gray-100 rounded-lg shadow-md">
+      <h1 className="text-2xl font-bold text-center mb-4">Todo App</h1>
       <Createtodo
         todo={todo}
         handleTodo={handleTodo}
