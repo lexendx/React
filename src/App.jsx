@@ -13,6 +13,7 @@ import ControlledForms1 from "./Components/forms/ControlledForms1";
 import ControlledForms2 from "./Components/forms/ControlledForms2";
 import TodoWrapper from "./TodoApp/TodoWrapper";
 import RefExample from "./refc/RefExample";
+import UncontrolledForm from "./Components/forms/UncontrolledForm";
 const App = ()=>{
 return(
     <div>
@@ -30,7 +31,8 @@ return(
 {/* <ControlledForms1></ControlledForms1>  */}
 {/* <ControlledForms2/> */}
 {/* <TodoWrapper/> */}
-<RefExample/>
+{/* <RefExample/> */}
+<UncontrolledForm/>
     </div>
 );
 

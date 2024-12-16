@@ -6,7 +6,7 @@ const RefExample=()=> {
     function changeBG()
     {
         console.log(demoRef); //{current h1}
-        demoRef.current.style.backgroundColor="red";
+        demoRef.current.style.backgroundColor="orange";
         demoRef.current.style.color="white";
     }
 
