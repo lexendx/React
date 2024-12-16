@@ -7,10 +7,7 @@ const UncontrolledForm=()=> {
 
     let formSubmit=(e)=>{
         e.preventDefault();
-    //     console.log(UsernameRef.current.value);
-    //     console.log(emailRef.current.value);
-    //     console.log(PasswordRef.current.value);
-    // 
+      
 let user={
     username:UsernameRef.current.value,
     email:emailRef.current.value,
@@ -34,7 +31,7 @@ console.log(user);
 <input type="text" ref={PasswordRef}/>
 <br/>
 <br/>
-<button type="Submit" onSubmit={formSubmit}>Submit</button>
+<button type="Submit" onSubmit={formSubmit} className="bg-orange-400">Submit</button>
 
 
 
