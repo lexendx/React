@@ -15,7 +15,11 @@ import TodoWrapper from "./TodoApp/TodoWrapper";
 import RefExample from "./refc/RefExample";
 import UncontrolledForm from "./Components/forms/UncontrolledForm";
 import LifeCycle from "./LifeCycle/LifeCycle";
+import { useState } from "react";
 const App = ()=>{
+    let [toggle, setToggle]=useState(false);
+
+
 return(
     <div>
 <h1></h1>
@@ -34,7 +38,8 @@ return(
 {/* <TodoWrapper/> */}
 {/* <RefExample/> */}
 {/* <UncontrolledForm/> */}
-  <LifeCycle/>
+<button onClick={()=>setToggle(!toggle)}>Toggle Switch</button>
+{toggle?<LifeCycle/>: <h1>No Component</h1>}
     </div>
 );
 
