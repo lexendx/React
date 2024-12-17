@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
 const UncontrolledForm=()=> {
-    let UsernameRef=useRef()
+    let UsernameRef=useRef();
     let emailRef=useRef();
     let PasswordRef=useRef();
 
