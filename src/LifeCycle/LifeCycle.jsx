@@ -8,6 +8,9 @@ export default class LifeCycle extends Component {
     componentDidUpdate(){
         console.log("Updating Phase");
     }
+    componentWillUnmount(){
+        console.log("Unmounting Phase");
+    }
   render() {
     return (
       <div>
