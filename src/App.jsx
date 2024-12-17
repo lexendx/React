@@ -14,6 +14,7 @@ import ControlledForms2 from "./Components/forms/ControlledForms2";
 import TodoWrapper from "./TodoApp/TodoWrapper";
 import RefExample from "./refc/RefExample";
 import UncontrolledForm from "./Components/forms/UncontrolledForm";
+import LifeCycle from "./LifeCycle/LifeCycle";
 const App = ()=>{
 return(
     <div>
@@ -32,7 +33,8 @@ return(
 {/* <ControlledForms2/> */}
 {/* <TodoWrapper/> */}
 {/* <RefExample/> */}
-<UncontrolledForm/>
+{/* <UncontrolledForm/> */}
+  <LifeCycle/>
     </div>
 );
 
