@@ -18,6 +18,7 @@ import LifeCycle from "./LifeCycle/LifeCycle";
 import { useState } from "react";
 import SideEffect from "./useEffect/SideEffect";
 import SideEffect2 from "./useEffect/SideEffect2";
+import FetchApi from "./Fetch/FetchApi";
 const App = ()=>{
     let [toggle, setToggle]=useState(false);
 
@@ -43,8 +44,9 @@ return(
 {/* <button onClick={()=>setToggle(!toggle)}>Toggle Switch</button>
 {toggle?<LifeCycle/>: <h1>No Component</h1>} */}
 {/* <SideEffect/> */}
-<button onClick={()=>setToggle(!toggle)}>Toggle Me</button>
-{toggle?<SideEffect2/>:<h1>No Component</h1>}
+{/* <button onClick={()=>setToggle(!toggle)}>Toggle Me</button>
+{toggle?<SideEffect2/>:<h1>No Component</h1>} */}
+<FetchApi/>
     </div>
 );
 
