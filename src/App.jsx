@@ -16,6 +16,7 @@ import RefExample from "./refc/RefExample";
 import UncontrolledForm from "./Components/forms/UncontrolledForm";
 import LifeCycle from "./LifeCycle/LifeCycle";
 import { useState } from "react";
+import SideEffect from "./useEffect/SideEffect";
 const App = ()=>{
     let [toggle, setToggle]=useState(false);
 
@@ -38,8 +39,9 @@ return(
 {/* <TodoWrapper/> */}
 {/* <RefExample/> */}
 {/* <UncontrolledForm/> */}
-<button onClick={()=>setToggle(!toggle)}>Toggle Switch</button>
-{toggle?<LifeCycle/>: <h1>No Component</h1>}
+{/* <button onClick={()=>setToggle(!toggle)}>Toggle Switch</button>
+{toggle?<LifeCycle/>: <h1>No Component</h1>} */}
+<SideEffect/>
     </div>
 );
 
