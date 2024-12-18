@@ -17,6 +17,7 @@ import UncontrolledForm from "./Components/forms/UncontrolledForm";
 import LifeCycle from "./LifeCycle/LifeCycle";
 import { useState } from "react";
 import SideEffect from "./useEffect/SideEffect";
+import SideEffect2 from "./useEffect/SideEffect2";
 const App = ()=>{
     let [toggle, setToggle]=useState(false);
 
@@ -41,7 +42,9 @@ return(
 {/* <UncontrolledForm/> */}
 {/* <button onClick={()=>setToggle(!toggle)}>Toggle Switch</button>
 {toggle?<LifeCycle/>: <h1>No Component</h1>} */}
-<SideEffect/>
+{/* <SideEffect/> */}
+<button onClick={()=>setToggle(!toggle)}>Toggle Me</button>
+{toggle?<SideEffect2/>:<h1>No Component</h1>}
     </div>
 );
 
