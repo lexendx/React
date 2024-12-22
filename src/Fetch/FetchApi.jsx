@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const FetchApi = () => {
     // State to store fetched data
@@ -33,43 +33,42 @@ const FetchApi = () => {
     }, []);
 
     return (
-        <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-            <h1 style={{ textAlign: "center", marginBottom: "20px" }}>GitHub Users</h1>
+        <div className="p-8 font-sans bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200 min-h-screen">
+            <h1 className="text-4xl font-bold text-center text-blue-600 mb-8">GitHub Users</h1>
 
-            {isLoading && <p>Loading data, please wait...</p>}
+            {isLoading && <p className="text-center text-lg text-blue-600 animate-pulse">Loading data, please wait...</p>}
 
-            {error && <p style={{ color: "red" }}>Error: {error}</p>}
+            {error && <p className="text-center text-red-600 font-semibold">Error: {error}</p>}
 
             {!isLoading && !error && usersData && (
-                <div
-                    style={{
-                        display: "grid",
-                        gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-                        gap: "20px",
-                    }}
-                >
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {usersData.map((user) => (
                         <section
                             key={user.id}
-                            style={{
-                                border: "1px solid #ddd",
-                                borderRadius: "8px",
-                                padding: "10px",
-                                textAlign: "center",
-                            }}
+                            className="bg-white border border-gray-200 shadow-md rounded-lg p-4 text-center transition-transform transform hover:scale-105 hover:shadow-lg"
                         >
-                            <h2 style={{ fontSize: "18px", margin: "10px 0" }}>{user.login}</h2>
                             <img
                                 src={user.avatar_url}
                                 alt={`${user.login}'s avatar`}
-                                style={{ borderRadius: "50%", width: "150px", height: "150px" }}
+                                className="rounded-full w-32 h-32 mx-auto mb-4 border-4 border-blue-100"
                             />
+                            <h2 className="text-lg font-medium text-gray-700">{user.login}</h2>
+                            <a
+                                href={`https://github.com/${user.login}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="mt-2 inline-block text-sm text-blue-500 hover:underline"
+                            >
+                                View Profile
+                            </a>
                         </section>
                     ))}
                 </div>
             )}
 
-            {!isLoading && !error && !usersData && <p>No data available.</p>}
+            {!isLoading && !error && !usersData && (
+                <p className="text-center text-gray-500">No data available.</p>
+            )}
         </div>
     );
 };
