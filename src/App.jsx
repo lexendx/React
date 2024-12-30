@@ -46,7 +46,7 @@ return(
 {/* <SideEffect/> */}
 {/* <button onClick={()=>setToggle(!toggle)}>Toggle Me</button>
 {toggle?<SideEffect2/>:<h1>No Component</h1>} */}
-<FetchApi/>
+{/* <FetchApi/> */}
     </div>
 );
 
